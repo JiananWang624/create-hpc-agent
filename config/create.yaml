@@ -1,0 +1,16 @@
+ssh_alias: create
+default_partition: gpu
+default_gpu_type: a100
+default_gpu_count: 1
+max_gpu_without_confirmation: 2
+max_default_walltime: "48:00:00"
+default_walltime: "24:00:00"
+default_cpus: 8
+default_memory: "64G"
+scratch_root: "/scratch/users/$USER"
+log_root: "/scratch/users/$USER/logs"
+allowed_partitions:
+  - gpu
+  - interruptible_gpu
+require_confirmation_before_submit: true
+require_confirmation_before_cancel: true
